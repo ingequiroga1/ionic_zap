@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Escanear QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Escanear QR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formGroup">
+        <ion-button
+          expand="block"
+          (click)="startScan()"
+          [disabled]="!isSupported"
+          >Start Scan</ion-button
+        >
+        <ion-button 
+        expand="block"
+        (click)="presentAlert()"
+        >Cliente</ion-button>
+
+        <ion-button 
+        expand="block"
+        routerLink="/"
+        >Salir</ion-button>
+      </form>
+    
+    </ion-card-content>
+   
+    <ion-alert
+      trigger="present-alert"
+      header="Please enter your info"
+      [buttons]="alertButtons"
+      [inputs]="alertInputs"
+    ></ion-alert>
+  </ion-card>
+  <ng-container *ngFor="let barcode of barcodes">
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="fixed">Descripcion</ion-label>
+          <ion-input
+            type="text"
+            readonly
+            [value]="barcode.displayValue"
+          ></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
+</ion-content>

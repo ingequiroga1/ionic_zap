@@ -1,0 +1,38 @@
+[
+	{
+		"pkg": "@capacitor-mlkit/barcode-scanning",
+		"classpath": "io.capawesome.capacitorjs.plugins.mlkit.barcodescanning.BarcodeScannerPlugin"
+	},
+	{
+		"pkg": "@capacitor-mlkit/face-mesh-detection",
+		"classpath": "io.capawesome.capacitorjs.plugins.mlkit.facemeshdetection.FaceMeshDetectionPlugin"
+	},
+	{
+		"pkg": "@capacitor-mlkit/selfie-segmentation",
+		"classpath": "io.capawesome.capacitorjs.plugins.mlkit.selfiesegmentation.SelfieSegmentationPlugin"
+	},
+	{
+		"pkg": "@capacitor-mlkit/translation",
+		"classpath": "io.capawesome.capacitorjs.plugins.mlkit.translation.TranslationPlugin"
+	},
+	{
+		"pkg": "@capacitor/app",
+		"classpath": "com.capacitorjs.plugins.app.AppPlugin"
+	},
+	{
+		"pkg": "@capacitor/haptics",
+		"classpath": "com.capacitorjs.plugins.haptics.HapticsPlugin"
+	},
+	{
+		"pkg": "@capacitor/keyboard",
+		"classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
+	},
+	{
+		"pkg": "@capacitor/status-bar",
+		"classpath": "com.capacitorjs.plugins.statusbar.StatusBarPlugin"
+	},
+	{
+		"pkg": "@capawesome/capacitor-file-picker",
+		"classpath": "io.capawesome.capacitorjs.plugins.filepicker.FilePickerPlugin"
+	}
+]
